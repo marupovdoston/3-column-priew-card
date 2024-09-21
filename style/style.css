@@ -1,0 +1,128 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 100vh;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: grid;
+    flex-wrap: wrap;
+    width: 33%;
+    align-items: center;
+    padding: 50px;
+    gap: 20px;
+}
+
+.box h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.box p {
+    color: #fff;
+}
+
+.sedans-content {
+    width: 170px;
+}
+
+.suvs-content, p {
+    width: 190px;
+    font-size: 17px;
+}
+
+.first {
+    background-color: #E28525;
+    border-radius: 20px 0 0 20px;
+}
+
+.second {
+    background-color: #016972;    
+}
+
+.third {
+    background-color: #00403F;
+    border-radius: 0 20px 20px 0;
+}
+
+.container {
+    flex-wrap: wrap;
+    display: flex;
+    width: 50%;
+}
+
+button {
+    width: 150px;
+    height: 45px;
+    border: 0;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+
+button:hover {
+    transition: all .5s ease;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.sedan-btn {
+    color: #E28525;
+}
+
+.suvs-btn {
+    color: #016972;
+}
+
+.luxury-btn {
+    color: #00403F;
+}
+
+  /* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .container {
+        width: 80%;
+    }
+}
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    .container {
+        width: 95%;
+    }
+}
+
+
+/* // X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 767.98px) {
+    
+
+    .box {
+        width: 100%;
+    }
+
+    .first {
+        margin-top: 20px;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .third {
+        border-radius: 0 0 10px 10px;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 75%;
+        display: grid;
+    }
+}
